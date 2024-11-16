@@ -67,7 +67,7 @@ const AuthForm = ({ type }: { type: string }) => {
         if (response) router.push("/");
       }
     } catch (error) {
-      console.log(error);
+      console.error("Error signing up:", error);
     } finally {
       setIsLoading(false);
     }
